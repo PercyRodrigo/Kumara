@@ -1,0 +1,51 @@
+<div class="header_product">
+    <div class="content_tittle_section">
+        <h2>Todos los Productos</h2>
+    </div>
+</div>
+<section class="content_section">
+    <div class="content_all_products">
+        <div class="content_category">
+            <ul class="content_list_category">
+                <li>
+                    <a href="#">Omega C</a>
+                </li>
+                <li>
+                    <a href="#">Alimenticios</a>
+                </li>
+                <li>
+                    <a href="#">Nutritivos</a>
+                </li>
+                <li>
+                    <a href="#">Sin lactosa</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- nota: los productos más pequeños -->
+        {{#each products}}
+        <div class="product_content">
+            <div class="product_grid">
+                <div class="offert" id="offert">
+                    Ahorre 5.99
+                </div>
+                <a href="/Products/{{id}}" class="product_link">
+                    <div class="product_image">
+                        <div class="image_wrap">
+                            <img src="/img/products/product-1.png" data-widths="[180, 360, 540, 720, 900, 1080]" data-sizes="auto" alt="">
+                        </div>
+                    </div>
+                    <div class="product_description">
+                        <div class="product_name">
+                            {{ name }}
+                        </div>
+                        <div class="product_price">
+                            S/. {{ price }}
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</section>
