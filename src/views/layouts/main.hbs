@@ -13,6 +13,71 @@
     {{> navigation }}
     {{{ body }}}
     
+    <aside id="cart" class="cart">
+        <div class="cart_content">
+            <div class="cart_tittle">
+                <h1>Carrito de compras</h1>
+                <a href="#" onclick="document.getElementById('body').style.overflow = 'inherit'"> <i class="fa fa-close"></i> </a>
+            </div>
+            <section class="cart_content_products">
+                <div class="cart_product">
+                    <div class="product_row">
+                        <div class="cart_prod_img">
+                            <a href="#">
+                                <img src="/img/products/product-1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="cart_prod_details">
+                            <div class="cart_prod_name">
+                                <a href="#">Yogurt de Maracuya</a>
+                                <span>Lorem ipsum dolor sit.</span>
+                            </div>
+                            <div class="cart_prod_actions">
+                                <div class="cart_quantity">
+                                    <input type="number" min="1" max="10" value="1">
+                                </div>
+                                <div class="cart_price">
+                                    <span>34.99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_product">
+                    <div class="product_row">
+                        <div class="cart_prod_img">
+                            <a href="#">
+                                <img src="/img/products/product-1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="cart_prod_details">
+                            <div class="cart_prod_name">
+                                <a href="#">Yogurt de Maracuya</a>
+                                <span>Lorem ipsum dolor sit.</span>
+                            </div>
+                            <div class="cart_prod_actions">
+                                <div class="cart_quantity">
+                                    <input type="number" min="1" max="10" value="1">
+                                </div>
+                                <div class="cart_price">
+                                    <span>34.99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="cart_information">
+                <div class="cart_total">
+                    <span>TOTAL :</span>
+                    <span>34.99</span>
+                </div>
+                <a href="#" class="cart_button">COMPRAR AHORA</a>
+            </div>
+        </div>
+        <a href="#" onclick="document.getElementById('body').style.overflow = 'inherit'" class="cart_close"></a>
+    </aside>
+    
     <footer class="container-fluid footer_page">
         <div class="row description">
             <div class="col-4"></div>
