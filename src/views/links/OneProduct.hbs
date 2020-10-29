@@ -1,7 +1,7 @@
 <div class="_navigation">
     
 </div>
-<div class="container-fluid">
+<div class="container-fluid" style="padding: 70px 15px;">
     <div class="row">
         <div class="col-6">
             <div class="content_img">
@@ -19,7 +19,13 @@
                 S/. {{ product.price }}
             </div>
             <div class="content_actions">
-                <button class="button">Agregar al Carrito</button>
+                <div>
+                    <span class="product_quantity">Cantidad</span>
+                    <input type="number" class="product_quantity_input" min="1" max="10" value="1">
+                </div>
+                <div>
+                    <button class="button product_one">Agregar al Carrito</button>
+                </div>
             </div>
         </div>
     </div>
